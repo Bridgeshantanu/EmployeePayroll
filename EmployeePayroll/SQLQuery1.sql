@@ -15,3 +15,10 @@ alter table employee_payroll add gender varchar(10);
 update employee_payroll set gender ='M' where name = 'ram';
 update employee_payroll set gender ='M' where name = 'raj';
 update employee_payroll set gender ='M' where name = 'shyam';
+
+select sum(salary) as total_salary from employee_payroll where gender = 'M' group by gender;
+select max(salary) as maximum_salary from employee_payroll where gender = 'M' group by gender;
+select min(salary) as minimum_salary from employee_payroll where gender = 'M' group by gender;
+select avg(salary) as average_salary from employee_payroll where gender = 'M' group by gender;
+select count(salary) as number_of_employees from employee_payroll where gender = 'M' group by gender;
+select count(salary) as number_of_employees from employee_payroll where gender = 'F' group by gender;
