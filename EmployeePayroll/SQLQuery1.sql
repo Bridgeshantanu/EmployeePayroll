@@ -28,3 +28,8 @@ alter table employee_payroll add phonenumber bigint, address varchar(50), depart
 update employee_payroll set phonenumber = 705418, address = 'xyz', department = 'manager' where id=1;
 update employee_payroll set phonenumber = 452552, address = 'abc', department = 'supervisor' where id=2;
 update employee_payroll set phonenumber = 705785, address = 'pqr', department = 'maintenance' where id=3;
+
+alter table employee_payroll add basic_pay bigint, deductions float, taxable_pay float, income_tax float, net_pay float;
+update employee_payroll set basic_pay = 18000, deductions = 0, taxable_pay = 0, income_tax = 0, net_pay = 0 where id=1;
+update employee_payroll set basic_pay = 23000, deductions = 0, taxable_pay = 0, income_tax = 0, net_pay = 0 where id=2;
+update employee_payroll set basic_pay = 23000, deductions = 0, taxable_pay = 0, income_tax = 0, net_pay = 0 where id=3;
