@@ -7,3 +7,6 @@ insert into employee_payroll values('ram',20000,'2023-05-04'),
 ('shyam',25000,'2020-08-18');
 
 select * from employee_payroll;
+
+select Salary from employee_payroll where name='ram';
+select * from employee_payroll where startDate between cast('2023-05-04' as date) and getdate();
