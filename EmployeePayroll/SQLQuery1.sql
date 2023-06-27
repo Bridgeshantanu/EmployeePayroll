@@ -10,3 +10,8 @@ select * from employee_payroll;
 
 select Salary from employee_payroll where name='ram';
 select * from employee_payroll where startDate between cast('2023-05-04' as date) and getdate();
+
+alter table employee_payroll add gender varchar(10);
+update employee_payroll set gender ='M' where name = 'ram';
+update employee_payroll set gender ='M' where name = 'raj';
+update employee_payroll set gender ='M' where name = 'shyam';
